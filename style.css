@@ -1,0 +1,155 @@
+.home-section{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-image: url('pics/pic1.jpg');
+    background-size: cover;
+    background-position: center top ;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    padding:15px;
+}
+.container{
+    max-width: 1170px;
+    background-color: cadetblue;
+    margin:auto;
+}
+.header-main{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0px;
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.header .logo{
+    padding: 0 15px;
+}
+.header .nav-menu{
+    padding: 0 15px;
+}
+.header .menu .menu-item{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+.header .menu .menu-item > a{
+    display: block;
+    padding:15px 0px;
+}
+.header .logo a{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: slateblue;
+}
+.header .menu .menu-item:hover >  a{
+    color: peru;
+}
+.header .menu .menu-item > .sub-menu{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width:220px;
+    position: absolute;
+    left: 0;
+    top:100%;
+    padding:10px 0;
+    border-top:3px solid crimson;
+    background-color: white;
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.header .menu > .menu-item > .sub-menu > .menu-item{
+    display: block;
+} 
+.header .menu > .menu-item > .sub-menu > .menu-item > a{
+    display:block;
+    padding:10px 0px;
+    font-size:16px;
+    font-weight: 600;
+    color:black;
+    text-transform: capitalize;
+}
+.header .menu > .menu-item:hover > .sub-menu{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.container1{
+    max-width: 1070px;
+    margin:auto;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.flip-main{
+    min-height: 100vh;
+    background-color: blanchedalmond;
+    padding: 100px 0;
+}
+.flip-main .flip-card{
+    margin: 0 15px 30px;
+    padding: 15px;
+    flex:0 0 calc(33.33% - 50px);
+}
+.row{
+    display: flex;
+}
+.flip-main .flip-card-inner{
+    box-shadow: 0 0 gray;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+.flip-main .flip-card-front img{
+    width: 100%;
+    opacity: 1;
+}
+.flip-main .flip-card-back{
+}
+
+.flip-main .flip-card-back{
+    background-color: rgb(42, 111, 133);
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    transform: rotateY(180deg);
+}
+.flip-main .flip-card-back h3{
+    font-size: 24px;
+    color: white;
+    margin: 0 0 10px;
+}
+.flip-main .flip-card:hover .flip-card-inner{
+    transform :rotateY(180deg);
+}
+
+
+
+
+
+
